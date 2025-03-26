@@ -7,7 +7,7 @@ abstract class Vehicle
     public abstract void Move();
     public virtual void DisplayInfo()
     {
-        Console.WriteLine($"Название: {Name}, Скорость: {Speed} км/ч");
+        Console.WriteLine($"Название: {Name}, cкорость: {Speed} км/ч");
     }
 }
 
@@ -55,9 +55,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        Vehicle car = new Car("Легковой автомобиль", 100);
-        Vehicle bicycle = new Bicycle("Горный велосипед", 25);
-        Vehicle boat = new Boat("Яхта", 40);
+        Vehicle car = new Car("ллегковой автомобиль", 100);
+        Vehicle bicycle = new Bicycle("горный велосипед", 25);
+        Vehicle boat = new Boat("яхта", 40);
         car.DisplayInfo();
         car.Move();
 
